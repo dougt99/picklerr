@@ -144,17 +144,18 @@
 </div>
 
 <script>
-// Corrected & balanced matrix: Every player plays 6 games & sits 3 times
+// Mathematically guaranteed 6-player matrix 
+// 100% Balanced: Everyone plays exactly 6 times, sits exactly 3 times.
 const SCHEDULE = [
-  { r: 1, t1: [0, 1], t2: [2, 3], sit: [4, 5] }, // Sit: P5, P6
-  { r: 2, t1: [2, 4], t2: [3, 5], sit: [0, 1] }, // Sit: P1, P2
-  { r: 3, t1: [0, 5], t2: [1, 4], sit: [2, 3] }, // Sit: P3, P4
-  { r: 4, t1: [1, 2], t2: [3, 4], sit: [0, 5] }, // Sit: P1, P6
-  { r: 5, t1: [0, 3], t2: [4, 5], sit: [1, 2] }, // Sit: P2, P3
-  { r: 6, t1: [1, 5], t2: [0, 2], sit: [3, 4] }, // Sit: P4, P5
-  { r: 7, t1: [0, 4], t2: [1, 3], sit: [2, 5] }, // Sit: P3, P6
-  { r: 8, t1: [2, 5], t2: [0, 3], sit: [1, 4] }, // Sit: P2, P5
-  { r: 9, t1: [0, 2], t2: [1, 4], sit: [3, 5] }  // Sit: P4, P6
+  { r: 1, t1: [0, 1], t2: [2, 3], sit: [4, 5] },
+  { r: 2, t1: [2, 4], t2: [3, 5], sit: [0, 1] },
+  { r: 3, t1: [0, 5], t2: [1, 4], sit: [2, 3] },
+  { r: 4, t1: [1, 2], t2: [3, 4], sit: [0, 5] },
+  { r: 5, t1: [0, 3], t2: [4, 5], sit: [1, 2] },
+  { r: 6, t1: [0, 2], t2: [1, 5], sit: [3, 4] },
+  { r: 7, t1: [1, 3], t2: [2, 5], sit: [0, 4] },
+  { r: 8, t1: [0, 4], t2: [1, 3], sit: [2, 5] },
+  { r: 9, t1: [0, 5], t2: [2, 4], sit: [1, 3] }
 ];
 
 window.onload = function() {
